@@ -1,34 +1,27 @@
 " ============================================================================ "
 
-" ---------                                                            ------- "
-" 42Purpose                      perfect-start                         2014-01 "
-" ---------                        .ps-vimrc                           ------- "
+" ---------                           .vimrc                           ------- "
 
 " ============================================================================ "
 
-" Plugins
-" --------
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'SirVer/ultisnips'
 Bundle 'bling/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'meriadec/vim-web-indent'
-Bundle 'digitaltoad/vim-jade'
+Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdtree'
 
-" Style
-" -----
-colorscheme solarized
 filetype plugin indent on
+colorscheme solarized
 set background=dark
 syntax on
+
 set colorcolumn=80
 set softtabstop=4
 set tabstop=4
@@ -46,20 +39,14 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 
-" Norme
-" -----
-au Bufenter *.c set comments=sl:/*,mb:**,elx:*/
-au Bufenter *.h set comments=sl:/*,mb:**,elx:*/
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+au Bufenter *.c set comments=sl:/*,mb:**,elx:*/
+au Bufenter *.h set comments=sl:/*,mb:**,elx:*/
+
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
-
-" UltiSnips
-" ---------
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
