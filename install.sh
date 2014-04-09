@@ -1,19 +1,35 @@
 #!/bin/bash
 
-function do_install {
-	printf "\033[32mInstalling $1 ...\033[0m\n"
-	if [ -f ~/$1 ]
-	then
-		echo the file exists
-	fi
+timestamp=$(date +"_%Y-%m-%d_%T" | sed 's/://g')
+
+function finish {
+	printf "\n\033[35mYou are all done !\033[0m\n\n"
+	exit
 }
 
+function do_backup {
+	cp $1 $1$timestamp
+	printf "    Backuped \033[35m$1$timestamp\033[0m\n"
+	rm $1
+}
+
+function do_install {
+	printf "\033[32m⮀ Installing \033[34m$1 \033[32m\033[0m\n"
+	if [ -f ~/$1 ]
+	then
+		do_backup ~/$1
+	fi
+	cp ./$1 ~/$1
+}
+
+printf "\n\033[32m        ⮀⮁\033[34m   Welcome to perfect dotfiles !   \033[32m⮃⮂\033[0m\n\n"
+
 PS3='Make your choice : '
-options=("install all files" ".gitconfig" ".gitignore_global" ".gitprompt" ".profile" ".tigrc" ".vimrc" ".zshrc" "Quit")
+options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitignore_global" ".gitprompt" ".profile" ".tigrc" ".vimrc" ".zshrc" "Quit")
 select opt in "${options[@]}"
 do
 	case $opt in
-		"install all files")
+		"INSTALL ALL")
 			do_install '.gitconfig'
 			do_install '.gitignore_global'
 			do_install '.gitprompt'
@@ -21,23 +37,38 @@ do
 			do_install '.tigrc'
 			do_install '.vimrc'
 			do_install '.zshrc'
-			do_install '.zshrcuu'
-			break;
+			finish
+			;;
+		"CLEAN BACKUPS")
+			/bin/rm -f ~/.gitconfig_*
+			/bin/rm -f ~/.gitignore_global_*
+			/bin/rm -f ~/.gitprompt_*
+			/bin/rm -f ~/.profile_*
+			/bin/rm -f ~/.tigrc_*
+			/bin/rm -f ~/.vimrc_*
+			/bin/rm -f ~/.zshrc_*
+			printf "\033[32m⮀ Finished clean up\033[0m\n"
+			finish
 			;;
 		".gitconfig")
 			do_install '.gitconfig'
+			finish
 			;;
 		".gitignore_global")
 			do_install '.gitignore_global'
+			finish
 			;;
 		".gitprompt")
 			do_install '.gitprompt'
+			finish
 			;;
 		".profile")
 			do_install '.profile'
+			finish
 			;;
 		".tigrc")
 			do_install '.tigrc'
+			finish
 			;;
 		".vimrc")
 			do_install '.vimrc'
