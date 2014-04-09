@@ -74,3 +74,6 @@ let g:airline_symbols.linenr = '⭡'
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
+let NERDTreeMinimalUI=1
+let NERDTreeCasadeOpenSingleChildDir=1
