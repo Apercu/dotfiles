@@ -4,6 +4,8 @@
 "                                                                          1.0 "
 " ============================================================================ "
 
+" Plugins
+" -------
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -16,6 +18,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+
+" Commons
+" -------
 
 syntax enable
 set background=dark
@@ -53,6 +58,9 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 
+" vim-airiline
+" ------------
+
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
@@ -75,14 +83,15 @@ let g:airline_symbols.linenr = '⭡'
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+" NERDTree
+" --------
+
 let NERDTreeMinimalUI=1
 let NERDTreeCasadeOpenSingleChildDir=1
 set modifiable
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
 function! s:CloseIfOnlyNerdTreeLeft()
   if exists("t:NERDTreeBufName")
     if bufwinnr(t:NERDTreeBufName) != -1
