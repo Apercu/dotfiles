@@ -24,6 +24,7 @@ export PATH=/bin:$PATH
 export PATH=~/.gem/ruby/2.0.0:$PATH
 export PATH=~/.node/bin:$PATH
 export PATH=~/.rvm/bin:$PATH
+export PATH=~/.brew/bin:$PATH
 export PATH=~/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
