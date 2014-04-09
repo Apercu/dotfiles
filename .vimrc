@@ -17,9 +17,11 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 
-filetype plugin indent on
-colorscheme solarized
+syntax enable
 set background=dark
+colorscheme solarized
+
+filetype plugin indent on
 syntax on
 
 set colorcolumn=80
@@ -50,3 +52,22 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
+
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+let g:airline_powerline_fonts=1
+set guifont=Menlo\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set term=xterm-256color
+set termencoding=utf-8
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
