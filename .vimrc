@@ -66,7 +66,6 @@ if !exists('g:airline_symbols')
 endif
 
 let g:airline_powerline_fonts=1
-set guifont=Menlo\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
