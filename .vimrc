@@ -73,3 +73,4 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 
 autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
