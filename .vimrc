@@ -28,7 +28,7 @@ set colorcolumn=80
 set softtabstop=4
 set tabstop=4
 set t_Co=256
-set wildmode=list:longest
+set wildmode=longest,full
 set cursorline
 set hlsearch
 set wildmenu
@@ -77,3 +77,4 @@ autocmd VimEnter * wincmd p
 
 let NERDTreeMinimalUI=1
 let NERDTreeCasadeOpenSingleChildDir=1
+set modifiable
