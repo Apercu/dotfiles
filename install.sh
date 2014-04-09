@@ -1,6 +1,7 @@
 #!/bin/bash
 
 timestamp=$(date +"_%Y-%m-%d_%T" | sed 's/://g')
+folder=$(pwd)
 
 function finish {
 	printf "\n\033[35mYou are all done !\033[0m\n\n"
@@ -8,18 +9,20 @@ function finish {
 }
 
 function do_backup {
-	cp $1 $1$timestamp
+	mv $1 $1$timestamp
 	printf "    Backuped \033[35m$1$timestamp\033[0m\n"
-	rm $1
 }
 
 function do_install {
-	printf "\033[32m⮀ Installing \033[34m$1 \033[32m\033[0m\n"
-	if [ -f ~/$1 ]
+	printf "\033[32m⮀ Installing \033[34m$1 \033[32m\033[0m...\n"
+	if [ -e ~/$1 ]
 	then
 		do_backup ~/$1
 	fi
-	cp ./$1 ~/$1
+	cd ~
+	/bin/ln -s $folder/$1 .
+	printf "    Installed \033[35m$1\033[0m !\n"
+	cd $folder
 }
 
 printf "\n\033[32m        ⮀⮁\033[34m   Welcome to perfect dotfiles !   \033[32m⮃⮂\033[0m\n\n"
