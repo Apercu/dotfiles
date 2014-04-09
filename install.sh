@@ -21,6 +21,8 @@ do
 			do_install '.tigrc'
 			do_install '.vimrc'
 			do_install '.zshrc'
+			do_install '.zshrcuu'
+			break;
 			;;
 		".gitconfig")
 			do_install '.gitconfig'
