@@ -29,11 +29,27 @@ colorscheme solarized
 filetype plugin indent on
 syntax on
 
+set noswapfile
+set nobackup
+set nowb
+set hidden
+set autoread
+set visualbell
 set colorcolumn=80
 set softtabstop=4
 set tabstop=4
 set t_Co=256
 set wildmode=longest,full
+set wildignore=*.o,*.obj,*~
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
 set cursorline
 set hlsearch
 set wildmenu
@@ -45,6 +61,9 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set noexpandtab
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
