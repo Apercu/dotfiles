@@ -26,6 +26,8 @@ export PATH=~/.node/bin:$PATH
 export PATH=~/.rvm/bin:$PATH
 export PATH=~/.brew/bin:$PATH
 export PATH=~/bin:$PATH
+export PATH=~/local/bin:$PATH
+export PATH=~/.gem/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.profile
