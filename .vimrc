@@ -18,6 +18,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
 
 " Commons
@@ -30,16 +31,27 @@ colorscheme solarized
 filetype plugin indent on
 syntax on
 
+set shiftwidth=4
+set sidescrolloff=15
+set colorcolumn=80
 set noswapfile
 set nobackup
 set nowb
 set hidden
 set autoread
 set visualbell
-set colorcolumn=80
-set softtabstop=4
-set tabstop=4
 set t_Co=256
+set cursorline
+set hlsearch
+set wildmenu
+set nowrap
+set number
+set ruler
+set smartindent
+set expandtab
+set scrolloff=8
+set sidescroll=1
+
 set wildmode=longest,full
 set wildignore=*.o,*.obj,*~
 set wildignore+=*vim/backups*
@@ -51,20 +63,6 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
-set cursorline
-set hlsearch
-set wildmenu
-set smarttab
-set nowrap
-set number
-set ruler
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set noexpandtab
-set scrolloff=8
-set sidescrolloff=15
-set sidescroll=1
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
