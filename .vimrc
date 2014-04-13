@@ -4,8 +4,6 @@
 "                                                                          1.0 "
 " ============================================================================ "
 
-" Plugins
-" -------
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -17,12 +15,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
-
-" Commons
-" -------
 
 syntax enable
 set background=dark
@@ -31,7 +25,9 @@ colorscheme solarized
 filetype plugin indent on
 syntax on
 
-set shiftwidth=4
+set expandtab
+set shiftwidth=2
+set tabstop=2
 set sidescrolloff=15
 set colorcolumn=80
 set noswapfile
@@ -47,8 +43,6 @@ set wildmenu
 set nowrap
 set number
 set ruler
-set smartindent
-set expandtab
 set scrolloff=8
 set sidescroll=1
 
@@ -76,9 +70,6 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 
-" vim-airiline
-" ------------
-
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
@@ -89,25 +80,3 @@ set encoding=utf-8
 set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
-
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-
-" NERDTree
-" --------
-
-let NERDTreeMinimalUI=1
-let NERDTreeCasadeOpenSingleChildDir=1
-set modifiable
-
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
