@@ -4,7 +4,16 @@
 #                                                                          1.0 #
 # ============================================================================ #
 
-export PS1=$'%{\e[0;33m%}%~ %{\e[0m%}'
+chmod 000 ~/Library/Caches/Google/Chrome/Default/Media\ Cache 2> /dev/null
+chmod 000 ~/Library/Caches/Google/Chrome/Default/Cache 2> /dev/null
+chmod 000 ~/Library/Caches/com.google.Software 2> /dev/null
+
+if [ $(find ~ -name '.zcompdump-*' -maxdepth 1) ]
+then
+	rm -f ~/.zcompdump-*
+fi
+
+export PS1=$'%{\e[0;35m%}%m %{\e[0;33m%}%~ %{\e[0m%}'
 export MAIL42='mpillet@student.42.fr'
 export USER42='mpillet'
 
@@ -18,3 +27,5 @@ alias gitf='git flow'
 alias gitp='git push'
 alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
+
+alias removestore="find ~ -name '*.DS_Store' -type f -delete"
