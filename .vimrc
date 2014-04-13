@@ -88,6 +88,3 @@ set encoding=utf-8
 set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
-
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
