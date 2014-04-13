@@ -48,7 +48,7 @@ set nowrap
 set number
 set ruler
 set smartindent
-set expandtab
+set noexpandtab
 set scrolloff=8
 set sidescroll=1
 

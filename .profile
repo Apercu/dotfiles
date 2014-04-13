@@ -4,7 +4,11 @@
 #                                                                          1.0 #
 # ============================================================================ #
 
-export PS1=$'%{\e[0;34m%}%m %{\e[0;33m%}%~ %{\e[0m%}'
+chmod 000 ~/Library/Caches/Google/Chrome/Default/Media\ Cache
+chmod 000 ~/Library/Caches/Google/Chrome/Default/Cache
+chmod 000 ~/Library/Caches/com.google.Software
+
+export PS1=$'%{\e[0;35m%}%m %{\e[0;33m%}%~ %{\e[0m%}'
 export MAIL42='mpillet@student.42.fr'
 export USER42='mpillet'
 
