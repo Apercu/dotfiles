@@ -17,7 +17,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
 
@@ -76,8 +75,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 
-" vim-airiline
-" ------------
+" vim-airline
+" -----------
 
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
@@ -92,22 +91,3 @@ set termencoding=utf-8
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-
-" NERDTree
-" --------
-
-let NERDTreeMinimalUI=1
-let NERDTreeCasadeOpenSingleChildDir=1
-set modifiable
-
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
