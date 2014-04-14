@@ -4,10 +4,6 @@
 #                                                                          1.0 #
 # ============================================================================ #
 
-chmod 000 ~/Library/Caches/Google/Chrome/Default/Media\ Cache 2> /dev/null
-chmod 000 ~/Library/Caches/Google/Chrome/Default/Cache 2> /dev/null
-chmod 000 ~/Library/Caches/com.google.Software 2> /dev/null
-
 if [ $(find ~ -name '.zcompdump-*' -maxdepth 1) ]
 then
 	rm -f ~/.zcompdump-*

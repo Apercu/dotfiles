@@ -14,7 +14,7 @@ Bundle 'bling/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
-Bundle 'msanders/snipmate.vim'
+Bundle 'SirVer/ultisnips'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
 
@@ -80,3 +80,10 @@ set encoding=utf-8
 set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
+
+command Sp set paste
+command Np set nopaste
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
