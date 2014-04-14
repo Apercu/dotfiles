@@ -24,4 +24,4 @@ alias gitp='git push'
 alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
 
-alias removestore="find ~ -name '*.DS_Store' -type f -delete"
+alias removestore="find . -name '*.DS_Store' -type f -delete"
