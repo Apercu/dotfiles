@@ -15,6 +15,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'SirVer/ultisnips'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
 
@@ -87,3 +89,22 @@ command Np set nopaste
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+let NERDTreeMinimalUI=1
+let NERDTreeCasadeOpenSingleChildDir=1
+set modifiable
+
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
