@@ -19,6 +19,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'lukaszb/vim-web-indent'
+Bundle 'etaoins/vim-volt-syntax'
 
 syntax enable
 set background=dark
@@ -85,6 +86,7 @@ set termencoding=utf-8
 
 command Sp set paste
 command Np set nopaste
+command Trim %s/ +$//g
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"

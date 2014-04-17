@@ -25,3 +25,7 @@ alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
 
 alias removestore="find . -name '*.DS_Store' -type f -delete"
+
+export PATH=$PATH:~/phalcon-tools
+export PTOOLSPATH=~/phalcon-tools
+export GEM_HOME=~/.gem
