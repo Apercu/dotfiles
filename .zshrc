@@ -28,6 +28,7 @@ export PATH=~/.brew/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/local/bin:$PATH
 export PATH=~/.gem/bin:$PATH
+export PATH=~/.mongo/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.profile
