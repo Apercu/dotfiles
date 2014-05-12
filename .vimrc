@@ -27,6 +27,7 @@ filetype plugin indent on
 syntax on
 
 set noexpandtab
+set wrap
 set shiftwidth=4
 set tabstop=4
 set sidescrolloff=15
@@ -41,7 +42,6 @@ set t_Co=256
 set cursorline
 set hlsearch
 set wildmenu
-set nowrap
 set number
 set ruler
 set scrolloff=8
