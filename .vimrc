@@ -27,7 +27,7 @@ filetype plugin indent on
 syntax on
 
 set noexpandtab
-set wrap
+set nowrap
 set shiftwidth=4
 set tabstop=4
 set sidescrolloff=15
