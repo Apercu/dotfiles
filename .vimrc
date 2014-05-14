@@ -15,11 +15,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'SirVer/ultisnips'
-Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'StanAngeloff/php.vim'
-Bundle 'lukaszb/vim-web-indent'
-Bundle 'etaoins/vim-volt-syntax'
+Bundle 'pangloss/vim-javascript'
 
 syntax enable
 set background=dark
@@ -29,7 +26,7 @@ filetype plugin indent on
 syntax on
 
 set noexpandtab
-set wrap
+set nowrap
 set shiftwidth=4
 set tabstop=4
 set sidescrolloff=15
