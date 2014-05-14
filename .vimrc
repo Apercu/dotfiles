@@ -16,7 +16,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
-Bundle 'pangloss/vim-javascript'
+Bundle 'lukaszb/vim-web-indent'
+Bundle 'altercation/vim-colors-solarized'
 
 syntax enable
 set background=dark
