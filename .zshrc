@@ -12,23 +12,24 @@ CASE_SENSITIVE="true"
 
 plugins=(git)
 
-export PATH=/usr/local/heroku/bin:$PATH
-export PATH=/usr/local/git/bin:$PATH
-export PATH=/usr/local/bin:$PATH
-export PATH=/opt/X11/bin:$PATH
-export PATH=/usr/sbin:$PATH
-export PATH=/usr/bin:$PATH
-export PATH=/sbin:$PATH
-export PATH=/bin:$PATH
+export PATH=/usr/local/bin
+export PATH=$PATH:/bin
+export PATH=$PATH:/sbin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/opt/X11/bin
+export PATH=$PATH:/usr/local/git/bin
+export PATH=$PATH:/usr/local/heroku/bin
 
-export PATH=~/.gem/ruby/2.0.0:$PATH
-export PATH=~/.node/bin:$PATH
-export PATH=~/.rvm/bin:$PATH
-export PATH=~/.brew/bin:$PATH
-export PATH=~/bin:$PATH
-export PATH=~/local/bin:$PATH
-export PATH=~/.gem/bin:$PATH
-export PATH=~/.mongo/bin:$PATH
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/.gem/bin
+export PATH=$PATH:~/.rvm/bin
+export PATH=$PATH:~/local/bin
+export PATH=$PATH:~/.brew/bin
+export PATH=$PATH:~/.cabal/bin
+export PATH=$PATH:~/.node/bin
+export PATH=$PATH:~/.mongo/bin
+export PATH=$PATH:~/.gem/ruby/2.0.0
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.profile
