@@ -9,20 +9,20 @@ function finish {
 }
 
 function do_backup {
-	mv $1 $1$timestamp
-	printf "    Backuped \033[35m$1$timestamp\033[0m\n"
+	mv "$1" "$1$timestamp"
+	printf "    Backuped \033[35m%s\033[0m\n" "$1$timestamp"
 }
 
 function do_install {
-	printf "\033[32m⮀ Installing \033[34m$1 \033[32m\033[0m...\n"
-	if [ -e ~/$1 ]
+	printf "\033[32m⮀ Installing \033[34m%s \033[32m\033[0m...\n" "$1"
+	if [ -e ~/"$1" ]
 	then
-		do_backup ~/$1
+		do_backup ~/"$1"
 	fi
 	cd ~
-	/bin/ln -s $folder/$1 .
-	printf "    Installed \033[35m$1\033[0m !\n"
-	cd $folder
+	/bin/ln -s "$folder/$1" "."
+	printf "    Installed \033[35m%s\033[0m !\n" "$1"
+	cd "$folder"
 }
 
 printf "\n\033[32m        ⮀⮁\033[34m   Welcome to perfect dotfiles !   \033[32m⮃⮂\033[0m\n\n"
