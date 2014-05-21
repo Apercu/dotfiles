@@ -6,8 +6,7 @@
 
 ZSH=$HOME/.oh-my-zsh
 
-DEFAULT_USER="meri"
-ZSH_THEME="agnoster"
+DEFAULT_USER="meriadec"
 CASE_SENSITIVE="true"
 
 plugins=(git)
