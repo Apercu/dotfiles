@@ -18,6 +18,7 @@ alias lt='ls -lt'
 alias gits='git status'
 alias gitf='git flow'
 alias gitp='git push'
+alias gitc='git commit -am'
 alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
 
