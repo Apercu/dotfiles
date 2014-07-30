@@ -15,7 +15,6 @@ Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'SirVer/ultisnips'
 Plugin 'scrooloose/nerdtree'
 Plugin 'lukaszb/vim-web-indent'
 
@@ -60,6 +59,12 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
@@ -91,21 +96,24 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
 
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
 
-let NERDTreeMinimalUI=1
-let NERDTreeCasadeOpenSingleChildDir=1
-set modifiable
-
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
+" Nerdtree
+" --------
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
+" 
+" let NERDTreeMinimalUI=1
+" let NERDTreeCasadeOpenSingleChildDir=1
+" set modifiable
+" 
+" autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" 
+" function! s:CloseIfOnlyNerdTreeLeft()
+"   if exists("t:NERDTreeBufName")
+"     if bufwinnr(t:NERDTreeBufName) != -1
+"       if winnr("$") == 1
+"         q
+"       endif
+"     endif
+"   endif
+" endfunction
