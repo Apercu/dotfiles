@@ -90,30 +90,7 @@ set termencoding=utf-8
 
 command Sp set paste
 command Np set nopaste
-command Trim %s/ +$//g
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
-
-
-" Nerdtree
-" --------
-" autocmd VimEnter * NERDTree
-" autocmd VimEnter * wincmd p
-" 
-" let NERDTreeMinimalUI=1
-" let NERDTreeCasadeOpenSingleChildDir=1
-" set modifiable
-" 
-" autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-" 
-" function! s:CloseIfOnlyNerdTreeLeft()
-"   if exists("t:NERDTreeBufName")
-"     if bufwinnr(t:NERDTreeBufName) != -1
-"       if winnr("$") == 1
-"         q
-"       endif
-"     endif
-"   endif
-" endfunction
