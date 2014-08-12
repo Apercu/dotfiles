@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'scrooloose/nerdtree'
 Plugin 'lukaszb/vim-web-indent'
+Plugin 'digitaltoad/vim-jade'
 
 call vundle#end()
 filetype plugin indent on
@@ -26,10 +27,10 @@ set background=dark
 colorscheme solarized
 
 syntax on
-set noexpandtab
+set expandtab
 set nowrap
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set sidescrolloff=15
 set colorcolumn=80
 set noswapfile
