@@ -23,3 +23,5 @@ alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
 
 alias removestore="find . -name '*.DS_Store' -type f -delete"
+
+alias run_storyplayr_webapp='mkdir /tmp/cache;grunt server --env=dev'
