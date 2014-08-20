@@ -20,7 +20,7 @@ function do_install {
 		do_backup ~/"$1"
 	fi
 	cd ~
-	/bin/ln -s "$folder/$1" "."
+	/bin/ln -s "$folder/files/$1" "."
 	printf "    Installed \033[35m%s\033[0m !\n" "$1"
 	cd "$folder"
 }
@@ -34,7 +34,7 @@ options=("INSTALL COMMONS" "CLEAN BACKUPS" ".gitconfig" ".gitignore_global" ".gi
 select opt in "${options[@]}"
 do
 	case $opt in
-		"INSTALL ALL")
+		"INSTALL COMMONS")
 			do_install '.gitconfig'
 			do_install '.gitignore_global'
 			do_install '.gitprompt'
@@ -42,6 +42,7 @@ do
 			do_install '.tigrc'
 			do_install '.vimrc'
 			do_install '.zshrc'
+			do_install '.Xdefaults'
 			finish
 			;;
 		"CLEAN BACKUPS")
