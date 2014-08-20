@@ -26,6 +26,9 @@ alias dl='cd ~/Downloads'
 alias removestore="find . -name '*.DS_Store' -type f -delete"
 alias run_storyplayr_webapp='mkdir /tmp/cache;grunt server --env=dev'
 
+alias scaffold='git config --local user.name TheScaffolder && git config --local user.email spam@forpurpose.io && git commit --amend --author "TheScaffolder <spam@forpurpose.io>" && git config --local --unset user.email && git config --local --unset user.name'
+alias unscaffold='git config --local user.name meriadec && git config --local user.email meriadec.pillet@gmail.com && git commit --amend --author "meriadec <meriadec.pillet@gmail.com>" && git config --local --unset user.email && git config --local --unset user.name'
+
 if [[ `uname` == 'Linux' ]]; then
   alias pbcopy='xsel --clipboard --input'
 fi
