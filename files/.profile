@@ -31,3 +31,11 @@ alias unscaffold='git config --local user.name meriadec && git config --local us
 if [[ `uname` == 'Linux' ]]; then
   alias pbcopy='xsel --clipboard --input'
 fi
+
+# Youtube stream on mpv
+
+function ytstream() {
+  mpv -cookies -cookies-file /tmp/ytcookie.txt $(youtube-dl -g --cookies=/tmp/ytcookie.txt "$1")
+}
+
+alias yt=ytstream
