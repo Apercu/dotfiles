@@ -14,11 +14,12 @@ alias prof='vim ~/.profile'
 alias sprof='source ~/.profile'
 
 alias lt='ls -lt'
+alias llink='ls -l `find . -maxdepth 1 -type l -print`'
 
 alias gits='git status'
 alias gitf='git flow'
 alias gitp='git push'
-alias gitc='git commit -am'
+alias gitc='git commit'
 alias gg='cd ~/git'
 alias dl='cd ~/Downloads'
 
