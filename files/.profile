@@ -8,7 +8,6 @@ export PS1=$'%{\e[0;37m%}%n@%m%{\e[0;33m%} %{\e[0;32m%}[%?]%{\e[0;33m%} %1~ %{\e
 export MAIL42='mpillet@student.42.fr'
 export USER42='mpillet'
 export DEFAULT_USER="meriadec"
-export GEM_HOME=~/.gem
 
 alias prof='vim ~/.profile'
 alias sprof='source ~/.profile'

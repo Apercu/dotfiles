@@ -11,6 +11,7 @@ ZSH=$HOME/.oh-my-zsh
 export EDITOR="/usr/bin/vim"
 export BROWSER="/usr/bin/chromium"
 export GOPATH="$HOME/go"
+export GEM_HOME=~/.gem
 export LANG=en_US.UTF-8
 
 # Commons options
