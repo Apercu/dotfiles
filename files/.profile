@@ -29,6 +29,7 @@
   # Folders
   alias gg='cd ~/git'
   alias dl='cd ~/Downloads'
+  alias dot='cd ~/git/dotfiles'
 
   # Git
   alias gits='git status'
