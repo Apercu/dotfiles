@@ -14,21 +14,23 @@ function do_backup {
 }
 
 function do_install {
-	printf "\033[32m⮀ Installing \033[34m%s \033[32m\033[0m...\n" "$1"
+	printf "\033[32m> Installing \033[34m%s \033[32m\033[0m...\n" "$1"
 	if [ -e ~/"$1" ]
 	then
 		do_backup ~/"$1"
 	fi
 	cd ~
-	/bin/ln -s "$folder/$1" "."
+	/bin/ln -s "$folder/files/$1" "."
 	printf "    Installed \033[35m%s\033[0m !\n" "$1"
 	cd "$folder"
 }
 
-printf "\n\033[32m        ⮀⮁\033[34m   Welcome to perfect dotfiles !   \033[32m⮃⮂\033[0m\n\n"
+printf "\n\033[32m        >>\033[34m- - - - - - - - - - - - - - - - - -\033[32m<<\033[0m\n"
+printf "\n\033[32m        >>\033[34m   Welcome to perfect dotfiles !   \033[32m<<\033[0m\n"
+printf "\n\033[32m        >>\033[34m- - - - - - - - - - - - - - - - - -\033[32m<<\033[0m\n\n"
 
 PS3='Make your choice : '
-options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitignore_global" ".gitprompt" ".profile" ".tigrc" ".vimrc" ".zshrc" "Quit")
+options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitignore_global" ".gitprompt" ".profile" ".tigrc" ".vimrc" ".zshrc" ".Xdefaults" "Quit")
 select opt in "${options[@]}"
 do
 	case $opt in
@@ -40,6 +42,7 @@ do
 			do_install '.tigrc'
 			do_install '.vimrc'
 			do_install '.zshrc'
+			do_install '.Xdefaults'
 			finish
 			;;
 		"CLEAN BACKUPS")
@@ -50,7 +53,7 @@ do
 			/bin/rm -f ~/.tigrc_*
 			/bin/rm -f ~/.vimrc_*
 			/bin/rm -f ~/.zshrc_*
-			printf "\033[32m⮀ Finished clean up\033[0m\n"
+			printf "\033[32m> Finished clean up\033[0m\n"
 			finish
 			;;
 		".gitconfig")
@@ -79,7 +82,11 @@ do
 		".zshrc")
 			do_install '.zshrc'
 			;;
+		".Xdefaults")
+			do_install '.Xdefaults'
+			;;
 		"Quit")
+			printf "\n\033[32m Bye.\033[0m\n\n"
 			break
 			;;
 		*) echo invalid option;;

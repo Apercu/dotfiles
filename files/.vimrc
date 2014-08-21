@@ -21,6 +21,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'lukaszb/vim-web-indent'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -124,3 +125,25 @@ autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
+
+" NERDTREE
+" --------
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+let NERDTreeMinimalUI=1
+let NERDTreeCasadeOpenSingleChildDir=1
+set modifiable
+
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
