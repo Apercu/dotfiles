@@ -16,12 +16,7 @@
   Plugin 'gmarik/Vundle.vim'
 
   Plugin 'bling/vim-airline'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'hail2u/vim-css3-syntax'
-  Plugin 'lukaszb/vim-web-indent'
-  Plugin 'digitaltoad/vim-jade'
   Plugin 'altercation/vim-colors-solarized'
-  Plugin 'scrooloose/nerdtree'
 
   call vundle#end()
   filetype plugin indent on
@@ -149,47 +144,5 @@
 
   let g:airline_powerline_fonts=1
   let g:Powerline_symbols = 'fancy'
-
-  "let g:airline_powerline_fonts = 1
-  "let g:airline_left_sep = ''
-  "let g:airline_left_alt_sep = ''
-  "let g:airline_right_sep = ''
-  "let g:airline_right_alt_sep = ''
-  "let g:airline_symbols.linenr = '¶'
-
-" }
-
-
-" -- Ultisnips {
-" ============
-
-  let g:UltiSnipsExpandTrigger="<tab>"
-  let g:UltiSnipsJumpForwardTrigger="<tab>"
-  let g:UltiSnipsJumpBackwardTrigger="<shift><tab>"
-
-" }
-
-
-" -- NerdTree {
-" ===========
-
-  autocmd VimEnter * NERDTree
-  autocmd VimEnter * wincmd p
-
-  let NERDTreeMinimalUI=1
-  let NERDTreeCasadeOpenSingleChildDir=1
-  set modifiable
-
-  autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-  function! s:CloseIfOnlyNerdTreeLeft()
-    if exists("t:NERDTreeBufName")
-      if bufwinnr(t:NERDTreeBufName) != -1
-        if winnr("$") == 1
-          q
-        endif
-      endif
-    endif
-  endfunction
 
 " }
