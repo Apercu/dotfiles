@@ -80,9 +80,6 @@
   " Auto-reload file if modified
   set autoread
 
-  " Disable annoying sound
-  set visualbell
-
   " Show cursor line
   set cursorline
 
@@ -102,8 +99,10 @@
   set listchars=tab:>-,extends:>,precedes:<
   set list
 
-" }
+  " Transparent bg <3
+  hi Normal ctermbg=NONE
 
+" }
 
 " -- Opening tab completion {
 " =========================
