@@ -29,11 +29,11 @@
 
   URxvt.allow_bold:           true
 
-  URxvt.font:                 xft:Menlo for Powerline:size=8
-  URxvt*boldFont:             xft:Menlo for Powerline:bold:size=8
-  URxvt*boldFont:             xft:Menlo for Powerline:size=8
-  URxvt*italicFont:           xft:Menlo for Powerline:italic:size=8
-  URxvt*boldItalicFont:       xft:Menlo for Powerline:size=8
+  URxvt.font:                 xft:Tamsyn:size=10
+  URxvt*boldFont:             xft:Tamsyn:bold:size=10
+  URxvt*boldFont:             xft:Tamsyn:size=10
+  URxvt*italicFont:           xft:Tamsyn:italic:size=10
+  URxvt*boldItalicFont:       xft:Tamsyn:size=10
 
 ! }
 
