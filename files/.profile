@@ -39,9 +39,15 @@
   alias scaffold='git config --local user.name TheScaffolder && git config --local user.email spam@forpurpose.io && git commit --amend --author "TheScaffolder <spam@forpurpose.io>" && git config --local --unset user.email && git config --local --unset user.name'
   alias unscaffold='git config --local user.name meriadec && git config --local user.email meriadec.pillet@gmail.com && git commit --amend --author "meriadec <meriadec.pillet@gmail.com>" && git config --local --unset user.email && git config --local --unset user.name'
 
-  # Clipboard copy
+  # -- Linux specifics
   if [[ `uname` == 'Linux' ]]; then
+
+    # Clipboard copy
     alias pbcopy='xsel --clipboard --input'
+
+    # Purge memory
+    alias purge='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
+
   fi
 
   # Youtube stream on mpv
