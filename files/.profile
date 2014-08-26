@@ -7,7 +7,7 @@
 # -- User centred values {
 # ======================
 
-  export PS1=$'%{\e[0;30m%}%n@%m%{\e[0;33m%} %{\e[0;30m%}[%?]%{\e[0;33m%} %1~ %{\e[0m%}%{\e[0;30m%}$%{\e[0;0m%} '
+  export PS1=$'%{\e[0;34m%}%n@%m%{\e[0;33m%} %{\e[0m%}[%{\e[0;37m%}%?%{\e[0m%}]%{\e[0;33m%} %1~ %{\e[0m%}%{\e[0;34m%}$%{\e[0;0m%} '
   export MAIL42='mpillet@student.42.fr'
   export USER42='mpillet'
   export DEFAULT_USER="meriadec"
