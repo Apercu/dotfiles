@@ -16,3 +16,4 @@
 [core]
 	editor = vim
 	excludesfile = /Users/meri/.gitignore_global
+	pager = less -S
