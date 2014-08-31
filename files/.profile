@@ -59,5 +59,6 @@
   # Other
   alias removestore="find . -name '*.DS_Store' -type f -delete"
   alias run_storyplayr_webapp='mkdir /tmp/cache;grunt server --env=dev'
+  alias gosleep="sudo shutdown -h +60"
 
 # }
