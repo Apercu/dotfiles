@@ -38,6 +38,7 @@
   alias gitc='git commit'
   alias scaffold='git config --local user.name TheScaffolder && git config --local user.email spam@forpurpose.io && git commit --amend --author "TheScaffolder <spam@forpurpose.io>" && git config --local --unset user.email && git config --local --unset user.name'
   alias unscaffold='git config --local user.name meriadec && git config --local user.email meriadec.pillet@gmail.com && git commit --amend --author "meriadec <meriadec.pillet@gmail.com>" && git config --local --unset user.email && git config --local --unset user.name'
+  alias validinstall='ln -s ~/git/dotfiles/files/validate-commit-msg.js .git/hooks/commit-msg'
 
   # -- Linux specifics
   if [[ `uname` == 'Linux' ]]; then
