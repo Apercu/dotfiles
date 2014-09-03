@@ -4,13 +4,11 @@
 #                                                                              #
 # ============================================================================ #
 
-[http]
 [user]
 	name = meriadec
 	email = meriadec.pillet@gmail.com
 [color]
 	ui = true
-[http]
 [push]
 	default = simple
 [core]
