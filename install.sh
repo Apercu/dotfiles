@@ -53,6 +53,7 @@ do
       /bin/rm -f ~/.tigrc_*
       /bin/rm -f ~/.vimrc_*
       /bin/rm -f ~/.zshrc_*
+      /bin/rm -f ~/.Xdefaults_*
       printf "\033[32m> Finished clean up\033[0m\n"
       finish
       ;;
