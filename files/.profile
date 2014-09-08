@@ -10,7 +10,7 @@
   export PS1=$'%{\e[0;34m%}%n@%m%{\e[0;33m%} %{\e[0m%}[%{\e[0;37m%}%?%{\e[0m%}]%{\e[0;33m%} %1~ %{\e[0m%}%{\e[0;34m%}$%{\e[0;0m%} '
   export MAIL42='mpillet@student.42.fr'
   export USER42='mpillet'
-  export DEFAULT_USER="meriadec"
+  export DEFAULT_USER='meriadec'
 
 # }
 
@@ -53,7 +53,7 @@
 
   # Youtube stream on mpv
   function ytstream() {
-    mpv -cookies -cookies-file /tmp/ytcookie.txt $(youtube-dl -g --cookies=/tmp/ytcookie.txt "$1")
+    mpv --really-quiet -cookies -cookies-file /tmp/ytcookie.txt $(youtube-dl -g --cookies=/tmp/ytcookie.txt "$1")
   }
   alias yt=ytstream
 
