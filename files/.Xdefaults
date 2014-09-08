@@ -93,7 +93,7 @@
 
   ! black dark/light
   *color0: #073642
-  *color8: #002b36
+  *color8: #aaaaaa
 
   ! red dark/light
   *color1: #dc322f
