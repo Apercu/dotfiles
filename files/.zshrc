@@ -61,5 +61,6 @@ ZSH=$HOME/.oh-my-zsh
   source $ZSH/oh-my-zsh.sh
   source $HOME/.profile
   source $HOME/.gitprompt
+  source $HOME/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # }
