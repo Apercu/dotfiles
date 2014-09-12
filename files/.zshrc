@@ -14,6 +14,9 @@ ZSH=$HOME/.oh-my-zsh
   export GOPATH="$HOME/go"
   export GEM_HOME=~/.gem
   export LANG=en_US.UTF-8
+  export PREPROD1="198.199.75.239"
+  export PREPROD2="198.27.65.90"
+  export PROD="195.154.167.249"
 
 # }
 
