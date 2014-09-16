@@ -18,6 +18,13 @@ ZSH=$HOME/.oh-my-zsh
   export PREPROD2="198.27.65.90"
   export PROD="195.154.167.249"
 
+  # -- Linux specifics
+  if [[ `uname` == 'Linux' ]]; then
+
+    export CHROME_BIN="/bin/chromium"
+
+  fi
+
 # }
 
 
