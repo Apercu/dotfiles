@@ -30,14 +30,14 @@ printf "\n\033[32m        >>\033[34m   Welcome to perfect dotfiles !   \033[32m<
 printf "\n\033[32m        >>\033[34m- - - - - - - - - - - - - - - - - -\033[32m<<\033[0m\n\n"
 
 PS3='Make your choice : '
-options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitignore_global" ".gitprompt" ".npmrc" ".profile" ".tigrc" ".vimrc" ".zshrc" ".Xdefaults" "Quit")
+options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitprompt" ".npmrc" ".profile" ".tigrc" ".vimrc" ".zshrc" ".Xdefaults" "Quit")
 select opt in "${options[@]}"
 do
   case $opt in
     "INSTALL ALL")
       do_install '.gitconfig'
-      do_install '.gitignore_global'
       do_install '.gitprompt'
+      do_install '.npmrc'
       do_install '.profile'
       do_install '.tigrc'
       do_install '.vimrc'
@@ -47,7 +47,6 @@ do
       ;;
     "CLEAN BACKUPS")
       /bin/rm -f ~/.gitconfig_*
-      /bin/rm -f ~/.gitignore_global_*
       /bin/rm -f ~/.gitprompt_*
       /bin/rm -f ~/.npmrc*
       /bin/rm -f ~/.profile_*
@@ -60,10 +59,6 @@ do
       ;;
     ".gitconfig")
       do_install '.gitconfig'
-      finish
-      ;;
-    ".gitignore_global")
-      do_install '.gitignore_global'
       finish
       ;;
     ".gitprompt")
