@@ -21,7 +21,7 @@
   URxvt.lineSpace:            0
 
   URxvt.depth:                32
-  URxvt.background:           rgba:0000/2b00/3600/bbbb
+  URxvt.background:           rgba:0000/2b00/3600/EEEE
 
 ! }
 
