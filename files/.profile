@@ -30,6 +30,7 @@
   alias gg='cd ~/git'
   alias dl='cd ~/Downloads'
   alias dot='cd ~/git/dotfiles'
+  alias ogg='cd ~/git/Ogg'
 
   # Git
   alias gits='git status'
