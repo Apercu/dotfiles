@@ -50,6 +50,9 @@
     # Purge memory
     alias purge='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
+    # Pacman upgrade
+    alias upgrade='sudo pacman -Syu'
+
   fi
 
   # Youtube stream on mpv
