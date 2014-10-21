@@ -173,4 +173,10 @@
 
 " }
 
-let g:user_emmet_expandabbr_key = '<S-Tab>'
+
+" -- emmet {
+" ==========
+
+  let g:user_emmet_expandabbr_key = '<S-Tab>'
+
+" }
