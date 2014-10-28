@@ -20,6 +20,8 @@ var PATTERN = /^(?:fixup!\s*)?(\w*)(\(([\w\$\.\*/-]*)\))?\: (.*)$/;
 var IGNORED = /^WIP\:/;
 var TYPES = {
   gen: true,
+  trans: true,
+  tmp: true,
   feat: true,
   fix: true,
   docs: true,

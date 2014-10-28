@@ -11,6 +11,7 @@
   export MAIL42='mpillet@student.42.fr'
   export USER42='mpillet'
   export DEFAULT_USER='meriadec'
+  export ZAVATTA='192.99.2.67'
 
 # }
 

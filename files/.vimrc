@@ -4,6 +4,16 @@
 "                                                                              "
 " ============================================================================ "
 
+" -- General {
+" ==========
+
+  let mapleader=","
+  nnoremap <silent> <Leader>k :CommandT<CR>
+  nnoremap <silent> <Leader>m :noh<CR>
+
+" }
+
+
 " -- Plugins {
 " ==========
 
@@ -17,6 +27,8 @@
 
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
+  Plugin 'wincent/command-t'
+  Plugin 'mattn/emmet-vim'
 
   call vundle#end()
   filetype plugin indent on
@@ -149,5 +161,22 @@
   let g:airline_right_sep = ''
   let g:airline_right_alt_sep = ''
   let g:airline_symbols.linenr = '¶'
+
+" }
+
+
+" -- command-t {
+" =============
+
+  let g:CommandTWildIgnore=&wildignore . ",**/bower_components/*,**/node_modules/*"
+  nnoremap <silent> <Leader>k :CommandT<CR>
+
+" }
+
+
+" -- emmet {
+" ==========
+
+  let g:user_emmet_expandabbr_key = '<S-Tab>'
 
 " }
