@@ -4,25 +4,27 @@
 #                                                                              #
 # ============================================================================ #
 
-stty -ixon
-ZSH=$HOME/.oh-my-zsh
+# -- Init {
+# =======
+
+  stty -ixon
+  ZSH=$HOME/.oh-my-zsh
+
+# }
+
 
 # -- Env {
 # ======
 
   export EDITOR="/usr/bin/vim"
-  export BROWSER="/usr/bin/chromium"
-  export GOPATH="$HOME/go"
-  export GEM_HOME=~/.gem
+  export GEM_HOME="~/.gem"
   export LANG=en_US.UTF-8
-  export PREPROD1="198.199.75.239"
-  export PREPROD2="198.27.65.90"
-  export PROD="195.154.167.249"
 
   # -- Linux specifics
   if [[ `uname` == 'Linux' ]]; then
 
-    export CHROME_BIN="/bin/chromium"
+    export CHROME_BIN="/bin/google-chrome-stable"
+    export BROWSER="/bin/google-chrome-stable"
 
   fi
 
