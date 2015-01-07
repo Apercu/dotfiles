@@ -10,6 +10,11 @@
   let mapleader=","
   nnoremap <silent> <Leader>k :CommandT<CR>
   nnoremap <silent> <Leader>m :noh<CR>
+  nnoremap <Space> <NOP>
+  nmap <silent> <Space><Up> :wincmd k<CR>
+  nmap <silent> <Space><Down> :wincmd j<CR>
+  nmap <silent> <Space><Left> :wincmd h<CR>
+  nmap <silent> <Space><Right> :wincmd l<CR>
 
 " }
 
