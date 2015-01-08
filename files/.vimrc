@@ -33,7 +33,6 @@
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'SirVer/ultisnips'
-  Plugin 'scrooloose/nerdtree'
 
   call vundle#end()
   filetype plugin indent on
@@ -176,29 +175,5 @@
    let g:UltiSnipsExpandTrigger="<tab>"
    let g:UltiSnipsJumpForwardTrigger="<tab>"
    let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" }
-
-" -- NerdTree {
-" ===========
-
-  autocmd VimEnter * NERDTree
-  autocmd VimEnter * wincmd p
-
-  let NERDTreeMinimalUI=1
-  let NERDTreeCasadeOpenSingleChildDir=1
-  set modifiable
-
-  autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-  function! s:CloseIfOnlyNerdTreeLeft()
-    if exists("t:NERDTreeBufName")
-      if bufwinnr(t:NERDTreeBufName) != -1
-        if winnr("$") == 1
-          q
-        endif
-      endif
-    endif
-  endfunction
 
 " }
