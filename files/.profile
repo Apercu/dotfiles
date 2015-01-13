@@ -65,5 +65,6 @@
   # Other
   alias gosleep="sudo shutdown -h +60"
   alias yolo="sudo dhcpcd && startx"
+  alias cache="chmod 000 Library/Caches/{com.apple.helpd,Google/Chrome/Default/Cache,Google/Chrome/Default/Media\ Cache}"
 
 # }
