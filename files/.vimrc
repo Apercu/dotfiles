@@ -11,10 +11,10 @@
   nnoremap <silent> <Leader>k :CommandT<CR>
   nnoremap <silent> <Leader>m :noh<CR>
   nnoremap <Space> <NOP>
-  nmap <silent> <Space>t :wincmd k<CR>
-  nmap <silent> <Space>h :wincmd j<CR>
-  nmap <silent> <Space>d :wincmd h<CR>
-  nmap <silent> <Space>n :wincmd l<CR>
+  nmap <silent> <Space>h :wincmd h<CR>
+  nmap <silent> <Space>t :wincmd j<CR>
+  nmap <silent> <Space>n :wincmd k<CR>
+  nmap <silent> <Space>s :wincmd l<CR>
 
 " }
 
