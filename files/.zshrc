@@ -25,6 +25,7 @@
 
     export CHROME_BIN="/bin/google-chrome-stable"
     export BROWSER="/bin/google-chrome-stable"
+    export ANDROID_HOME="/opt/android-sdk"
 
   fi
 
@@ -47,6 +48,7 @@
   export PATH=$PATH:$HOME/.brew/bin
   export PATH=$PATH:$HOME/.node/bin
   export PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
+  export PATH=$PATH:/opt/android-sdk/tools
   export PATH=$PATH:/bin
   export PATH=$PATH:/sbin
   export PATH=$PATH:/usr/bin
