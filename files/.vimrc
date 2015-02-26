@@ -4,21 +4,6 @@
 "                                                                              "
 " ============================================================================ "
 
-" -- General {
-" ==========
-
-  let mapleader=","
-  nnoremap <silent> <Leader>k :CommandT<CR>
-  nnoremap <silent> <Leader>m :noh<CR>
-  nnoremap <Space> <NOP>
-  nmap <silent> <Space>h :wincmd h<CR>
-  nmap <silent> <Space>t :wincmd j<CR>
-  nmap <silent> <Space>n :wincmd k<CR>
-  nmap <silent> <Space>s :wincmd l<CR>
-
-" }
-
-
 " -- Plugins {
 " ==========
 
@@ -165,6 +150,20 @@
   let g:airline_right_sep = ''
   let g:airline_right_alt_sep = ''
   let g:airline_symbols.linenr = '¶'
+
+" }
+
+
+" -- Mapping {
+" ==========
+
+  let mapleader=","
+  nnoremap <silent> <Leader>m :noh<CR>
+  nnoremap <Space> <NOP>
+  nmap <silent> <Space>h :wincmd h<CR>
+  nmap <silent> <Space>t :wincmd j<CR>
+  nmap <silent> <Space>n :wincmd k<CR>
+  nmap <silent> <Space>s :wincmd l<CR>
 
 " }
 
