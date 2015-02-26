@@ -18,6 +18,7 @@
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'SirVer/ultisnips'
+  Plugin 'Raimondi/delimitMate'
 
   call vundle#end()
   filetype plugin indent on
