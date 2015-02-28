@@ -69,3 +69,10 @@
   source $HOME/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # }
+
+# -- Fix oh-my-zsh {
+# ================
+
+  export GREP_OPTIONS=""
+
+# }
