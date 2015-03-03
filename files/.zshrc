@@ -49,6 +49,7 @@
   export PATH=$PATH:$HOME/.node/bin
   export PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
   export PATH=$PATH:/opt/android-sdk/tools
+  export PATH=$PATH:$HOME/.brew/Cellar/node/0.10.36/bin
   export PATH=$PATH:/bin
   export PATH=$PATH:/sbin
   export PATH=$PATH:/usr/bin
