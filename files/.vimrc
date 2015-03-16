@@ -34,7 +34,6 @@
   Plugin 'SirVer/ultisnips'
   Plugin 'Raimondi/delimitMate'
   Plugin '42Zavattas/ZavattaHeader'
-  Plugin '42Zavattas/vim-snippets'
 
   call vundle#end()
   filetype plugin indent on
