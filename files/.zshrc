@@ -60,6 +60,7 @@
   export PATH=$PATH:/opt/X11/bin
   export PATH=$PATH:/usr/local/bin
   export PATH=$PATH:/usr/local/sbin
+  export PATH=$PATH:/opt/android-sdk/platform-tools
 
   if [[ `uname` == 'Linux' ]]; then
 
