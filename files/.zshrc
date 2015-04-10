@@ -20,6 +20,9 @@
   export GEM_HOME="~/.gem"
   export LANG=en_US.UTF-8
 
+  export NVM_DIR="/home/meri/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
   # Linux specifics
   if [[ `uname` == 'Linux' ]]; then
 
@@ -57,6 +60,12 @@
   export PATH=$PATH:/opt/X11/bin
   export PATH=$PATH:/usr/local/bin
   export PATH=$PATH:/usr/local/sbin
+
+  if [[ `uname` == 'Linux' ]]; then
+
+    export PATH=$PATH:$HOME/Webstorm10/bin
+
+  fi
 
 # }
 
