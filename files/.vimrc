@@ -10,6 +10,8 @@
 
   let mapleader=","
   nnoremap <silent> <Leader>m :noh<CR>
+  nnoremap <silent> <Leader>k :CommandT<CR>
+  let g:CommandTWildIgnore=&wildignore . ",**/bower_components/*" . ",**/node_modules/*"
   nnoremap <Space> <NOP>
   nmap <silent> <Space>h :wincmd h<CR>
   nmap <silent> <Space>t :wincmd j<CR>
@@ -29,6 +31,7 @@
 
   Plugin 'gmarik/Vundle.vim'
 
+  Plugin 'wincent/command-t'
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'SirVer/ultisnips'
