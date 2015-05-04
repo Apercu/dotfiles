@@ -112,6 +112,9 @@
   " Show infos in status bar
   set ruler
 
+  " Prevent annoying highlight on search
+  set nohlsearch
+
   " Never use Ex useless mode
   nnoremap Q <ESC>
 
