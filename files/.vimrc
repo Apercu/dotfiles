@@ -154,6 +154,8 @@
   autocmd BufWinLeave * call clearmatches()
   autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
 
+  autocmd VimResized * :wincmd =
+
 " }
 
 
