@@ -106,6 +106,9 @@
   " Highlight search
   set hlsearch
 
+  " Move on search
+  set incsearch
+
   " Show line numbers
   set number
 
