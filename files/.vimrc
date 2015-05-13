@@ -103,9 +103,6 @@
   " Show cursor line
   set cursorline
 
-  " Highlight search
-  set hlsearch
-
   " Move on search
   set incsearch
 
