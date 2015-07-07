@@ -30,7 +30,7 @@ printf "\n\033[32m        >>\033[34m   Welcome to perfect dotfiles !   \033[32m<
 printf "\n\033[32m        >>\033[34m- - - - - - - - - - - - - - - - - -\033[32m<<\033[0m\n\n"
 
 PS3='Make your choice : '
-options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitprompt" ".npmrc" ".profile" ".tigrc" ".vimrc" ".zshrc" ".Xdefaults" "Quit")
+options=("INSTALL ALL" "CLEAN BACKUPS" ".gitconfig" ".gitprompt" ".npmrc" ".profile" ".tigrc" ".vimrc" ".zshrc" ".Xresources" "Quit")
 select opt in "${options[@]}"
 do
   case $opt in
@@ -42,7 +42,7 @@ do
       do_install '.tigrc'
       do_install '.vimrc'
       do_install '.zshrc'
-      do_install '.Xdefaults'
+      do_install '.Xresources'
       finish
       ;;
     "CLEAN BACKUPS")
@@ -53,7 +53,7 @@ do
       /bin/rm -f ~/.tigrc_*
       /bin/rm -f ~/.vimrc_*
       /bin/rm -f ~/.zshrc_*
-      /bin/rm -f ~/.Xdefaults_*
+      /bin/rm -f ~/.Xresources_*
       printf "\033[32m> Finished clean up\033[0m\n"
       finish
       ;;
@@ -83,8 +83,8 @@ do
     ".zshrc")
       do_install '.zshrc'
       ;;
-    ".Xdefaults")
-      do_install '.Xdefaults'
+    ".Xresources")
+      do_install '.Xresources'
       ;;
     "Quit")
       printf "\n\033[32m Bye.\033[0m\n\n"
