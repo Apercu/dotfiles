@@ -21,6 +21,9 @@ export PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig
   export USER42='mpillet'
   export DEFAULT_USER='meriadec'
   export ZAVATTA='192.99.2.67'
+  export GRAVITYMONGO='52.18.197.13'
+  export GRAVITYNODE='52.18.179.127'
+  export GRAVITYPREPROD='52.18.116.121'
 
 # }
 

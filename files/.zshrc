@@ -19,6 +19,7 @@
   export EDITOR="/usr/bin/vim"
   export GEM_HOME="~/.gem"
   export LANG=en_US.UTF-8
+  export GOPATH=~/go
 
   export NVM_DIR="/home/meri/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -48,6 +49,7 @@
 # =======
 
   export PATH=$HOME/bin
+  export PATH=$PATH:$HOME/go/bin
   export PATH=$PATH:$HOME/.brew/bin
   export PATH=$PATH:$HOME/.node/bin
   export PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
