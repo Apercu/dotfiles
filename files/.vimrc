@@ -35,6 +35,10 @@
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
+  Plugin 'wincent/command-t'
+  Plugin 'mattn/emmet-vim'
+  Plugin 'SirVer/ultisnips'
+  Plugin '42Zavattas/vim-snippets'
 
   call vundle#end()
   filetype plugin indent on
