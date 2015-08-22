@@ -31,7 +31,6 @@
 
   Plugin 'gmarik/Vundle.vim'
 
-  Plugin 'wincent/command-t'
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
