@@ -35,7 +35,6 @@
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
   Plugin 'wincent/command-t'
-  Plugin 'mattn/emmet-vim'
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
 
@@ -69,6 +68,9 @@
   set termencoding=utf-8
   set t_Co=256
   set term=xterm-256color
+
+  " Correct strange bug
+  set backspace=indent,eol,start
 
   " Insert space characters whenever <tab> is pressed
   set expandtab
