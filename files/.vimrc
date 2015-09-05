@@ -8,10 +8,6 @@
 " -- Mapping {
 " ==========
 
-  let mapleader=","
-  nnoremap <silent> <Leader>m :noh<CR>
-  nnoremap <silent> <Leader>k :CommandT<CR>
-  let g:CommandTWildIgnore=&wildignore . ",**/bower_components/*" . ",**/node_modules/*"
   nnoremap <Space> <NOP>
   nmap <silent> <Space>h :wincmd h<CR>
   nmap <silent> <Space>t :wincmd j<CR>
@@ -19,6 +15,7 @@
   nmap <silent> <Space>s :wincmd l<CR>
 
 " }
+
 
 " -- Plugins {
 " ==========
@@ -34,7 +31,6 @@
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
-  Plugin 'wincent/command-t'
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
 
@@ -67,7 +63,6 @@
   set encoding=utf-8
   set termencoding=utf-8
   set t_Co=256
-  set term=xterm-256color
 
   " Correct strange bug
   set backspace=indent,eol,start
@@ -148,15 +143,10 @@
   highlight ExtraWhitespace ctermbg=red guibg=red
   match ExtraWhitespace /\s\+$/
 
-  au Bufenter *.c set comments=sl:/*,mb:**,elx:*/
-  au Bufenter *.h set comments=sl:/*,mb:**,elx:*/
-
   autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
   autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
-  autocmd FileType html,css setlocal shiftwidth=2 tabstop=2
-
   autocmd VimResized * :wincmd =
 
 " }
@@ -169,7 +159,7 @@
     let g:airline_symbols = {}
   endif
 
-  let g:airline_powerline_fonts=1
+  let g:airline_powerline_fonts=0
   let g:Powerline_symbols = 'fancy'
   let g:airline_powerline_fonts = 1
   let g:airline_left_sep = ''
@@ -177,6 +167,7 @@
   let g:airline_right_sep = ''
   let g:airline_right_alt_sep = ''
   let g:airline_symbols.linenr = '¶'
+  set laststatus=2
 
 " }
 
