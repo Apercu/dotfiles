@@ -31,6 +31,7 @@
   Plugin 'bling/vim-airline'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
+  Plugin 'pangloss/vim-javascript'
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
 
