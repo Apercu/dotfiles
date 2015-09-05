@@ -4,8 +4,6 @@
 #                                                                              #
 # ============================================================================ #
 
-export PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig
-
 # -- Prompt {
 # =========
 
@@ -17,13 +15,7 @@ export PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig
 # -- User centred values {
 # ======================
 
-  export MAIL42='mpillet@student.42.fr'
-  export USER42='mpillet'
-  export DEFAULT_USER='meriadec'
   export ZAVATTA='192.99.2.67'
-  export GRAVITYMONGO='52.18.197.13'
-  export GRAVITYNODE='52.18.179.127'
-  export GRAVITYPREPROD='52.18.116.121'
 
 # }
 
@@ -42,16 +34,13 @@ export PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig
   alias gg='cd ~/git'
   alias dl='cd ~/Downloads'
   alias dot='cd ~/git/dotfiles'
-  alias ogg='cd ~/git/Ogg'
 
   # Git
   alias gits='git status'
-  alias gitf='git flow'
   alias gitp='git push'
   alias gitc='git commit'
   alias scaffold='git config --local user.name TheScaffolder && git config --local user.email spam@forpurpose.io && git commit --amend --author "TheScaffolder <spam@forpurpose.io>" && git config --local --unset user.email && git config --local --unset user.name'
   alias unscaffold='git config --local user.name meriadec && git config --local user.email meriadec.pillet@gmail.com && git commit --amend --author "meriadec <meriadec.pillet@gmail.com>" && git config --local --unset user.email && git config --local --unset user.name'
-  alias validinstall='ln -s ~/git/dotfiles/files/validate-commit-msg.js .git/hooks/commit-msg'
 
   # Linux specifics
   if [[ `uname` == 'Linux' ]]; then
@@ -62,14 +51,9 @@ export PKG_CONFIG_PATH=/usr/X11/lib/pkgconfig
     # Purge memory
     alias purge='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
-    # Pacman upgrade
-    alias upgrade='sudo pacman -Syu'
-
   fi
 
   # Other
-  alias gosleep="sudo shutdown -h +60"
   alias yolo="sudo dhcpcd && startx"
-  alias cache="chmod 000 Library/Caches/{com.apple.helpd,Google/Chrome/Default/Cache,Google/Chrome/Default/Media\ Cache}"
 
 # }

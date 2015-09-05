@@ -7,7 +7,6 @@
 # -- Init {
 # =======
 
-  stty -ixon
   ZSH=$HOME/.oh-my-zsh
 
 # }
@@ -19,10 +18,9 @@
   export EDITOR="/usr/bin/vim"
   export GEM_HOME="~/.gem"
   export LANG=en_US.UTF-8
-  export GOPATH=~/go
 
   export NVM_DIR="/home/meri/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
   # Linux specifics
   if [[ `uname` == 'Linux' ]]; then
