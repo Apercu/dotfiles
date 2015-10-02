@@ -13,6 +13,7 @@
   nmap <silent> <Space>t :wincmd j<CR>
   nmap <silent> <Space>n :wincmd k<CR>
   nmap <silent> <Space>s :wincmd l<CR>
+  vnoremap // y/<C-R>"<CR>"
 
 " }
 
@@ -113,6 +114,10 @@
 
   " Prevent annoying highlight on search
   set nohlsearch
+
+  " More intelligent searches
+  set ignorecase
+  set smartcase
 
   " Never use Ex useless mode
   nnoremap Q <ESC>
