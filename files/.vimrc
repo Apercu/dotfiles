@@ -33,6 +33,8 @@
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
   Plugin 'pangloss/vim-javascript'
+  Plugin 'kchmck/vim-coffee-script'
+  Plugin 'mtscout6/vim-cjsx'
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
 
@@ -85,6 +87,9 @@
   set sidescrolloff=15
   set sidescroll=1
   set scrolloff=8
+
+  " Auto reload files when changed
+  set autoread
 
   " Show the 80 chars column
   set colorcolumn=80
