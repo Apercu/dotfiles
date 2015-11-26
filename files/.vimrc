@@ -38,6 +38,7 @@
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
   Plugin 'scrooloose/syntastic'
+  Plugin 'airblade/vim-gitgutter'
 
   call vundle#end()
   filetype plugin indent on
