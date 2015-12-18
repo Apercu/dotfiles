@@ -129,8 +129,8 @@
   nnoremap Q <ESC>
 
   " Show blank characters
-  " set listchars=tab:>-,extends:>,precedes:<
-  " set list
+  set listchars=tab:>-,trail:·,nbsp:%
+  set list
 
   " Transparent bg <3
   hi Normal ctermbg=NONE
