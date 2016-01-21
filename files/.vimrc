@@ -38,7 +38,6 @@
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
   Plugin 'airblade/vim-gitgutter'
-  Plugin 'Valloric/YouCompleteMe'
 
   call vundle#end()
   filetype plugin indent on
@@ -189,14 +188,5 @@
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<tab>"
   let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" }
-
-
-" -- YouCompleteMe {
-" ================
-
-  let g:ycm_key_list_select_completion = ['<Down>']
-  let g:ycm_key_list_previous_completion = ['<Up>']
 
 " }
