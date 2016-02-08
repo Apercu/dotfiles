@@ -38,6 +38,8 @@
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
   Plugin 'airblade/vim-gitgutter'
+  Plugin 'mattn/emmet-vim'
+  Plugin 'ctrlpvim/ctrlp.vim'
 
   call vundle#end()
   filetype plugin indent on
@@ -144,6 +146,7 @@
   set wildignore=*.o,*.obj,*~
   set wildignore+=*sass-cache*
   set wildignore+=*DS_Store*
+  set wildignore+=*node_modules*
   set wildmenu
 
 " }
@@ -188,5 +191,17 @@
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<tab>"
   let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" }
+
+
+" -- Emmet {
+" ========
+
+  let g:user_emmet_settings = {
+  \  'html' : {
+  \    'quote_char': "'"
+  \  }
+  \}
 
 " }
