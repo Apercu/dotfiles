@@ -14,6 +14,7 @@
   nmap <silent> <Space>n :wincmd k<CR>
   nmap <silent> <Space>s :wincmd l<CR>
   vnoremap // y/<C-R>"<CR>"
+  let mapleader=","
 
 " }
 
@@ -40,6 +41,7 @@
   Plugin 'airblade/vim-gitgutter'
   Plugin 'mattn/emmet-vim'
   Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'easymotion/vim-easymotion'
 
   call vundle#end()
   filetype plugin indent on
