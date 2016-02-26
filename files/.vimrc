@@ -30,7 +30,7 @@
 
   Plugin 'gmarik/Vundle.vim'
 
-  Plugin 'bling/vim-airline'
+  Plugin 'itchyny/lightline.vim'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
   Plugin 'pangloss/vim-javascript'
@@ -39,7 +39,6 @@
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
   Plugin 'airblade/vim-gitgutter'
-  Plugin 'mattn/emmet-vim'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'easymotion/vim-easymotion'
 
@@ -87,6 +86,9 @@
 
   " Don't wrap long lines
   set nowrap
+
+  " Always show status bar
+  set laststatus=2
 
   " Number of lines to keep above & below cursor when scrolling
   set sidescrolloff=15
@@ -149,6 +151,7 @@
   set wildignore+=*sass-cache*
   set wildignore+=*DS_Store*
   set wildignore+=*node_modules*
+  set wildignore+=*dist*
   set wildmenu
 
 " }
@@ -169,20 +172,12 @@
 " }
 
 
-" -- Vim Airline {
-" ==============
+" -- Lightline {
+" ============
 
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-
-  let g:airline_powerline_fonts=0
-  let g:airline_left_sep = ''
-  let g:airline_left_alt_sep = ''
-  let g:airline_right_sep = ''
-  let g:airline_right_alt_sep = ''
-  let g:airline_symbols.linenr = ''
-  set laststatus=2
+  let g:lightline = {
+  \   'colorscheme': 'solarized_dark'
+  \ }
 
 " }
 
