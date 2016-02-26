@@ -41,6 +41,7 @@
   Plugin 'airblade/vim-gitgutter'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'easymotion/vim-easymotion'
+  Plugin 'mhinz/vim-startify'
 
   call vundle#end()
   filetype plugin indent on
@@ -168,6 +169,35 @@
   autocmd InsertLeave * match ExtraWhitespace /\s\+$/
   autocmd BufWinLeave * call clearmatches()
   autocmd VimResized * :wincmd =
+
+" }
+
+
+" -- Startify {
+" ===========
+
+    function! s:filter_header(lines) abort
+    let longest_line   = max(map(copy(a:lines), 'len(v:val)'))
+    let centered_lines = map(copy(a:lines),
+        \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+    return centered_lines
+    endfunction
+    let g:startify_custom_header = s:filter_header([
+    \  "         ________ ++     ________",
+    \  "        /VVVVVVVV\++++  /VVVVVVVV\\",
+    \  "        \\VVVVVVVV/++++++\\VVVVVVVV/",
+    \  "         |VVVVVV|++++++++/VVVVV/'",
+    \  "         |VVVVVV|++++++/VVVVV/'",
+    \  "        +|VVVVVV|++++/VVVVV/'+",
+    \  "      +++|VVVVVV|++/VVVVV/'+++++",
+    \  "    +++++|VVVVVV|/VVVVV/'+++++++++",
+    \  "      +++|VVVVVVVVVVV/'+++++++++",
+    \  "        +|VVVVVVVVV/'+++++++++",
+    \  "         |VVVVVVV/'+++++++++",
+    \  "         |VVVVV/'+++++++++",
+    \  "         |VVV/'+++++++++",
+    \  "         'V/'   ++++++",
+    \  "                  ++"])
 
 " }
 
