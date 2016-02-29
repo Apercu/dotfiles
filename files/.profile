@@ -16,6 +16,8 @@
 # ======================
 
   export ZAVATTA='192.99.2.67'
+  export MJ_APIKEY_PUBLIC='03764601c1aee5f2320714cb59d0317a'
+  export MJ_APIKEY_PRIVATE='ee59d3fcd8a9d75ee6f544ae2ac4b604'
 
 # }
 

@@ -41,7 +41,6 @@
   Plugin 'airblade/vim-gitgutter'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'easymotion/vim-easymotion'
-  Plugin 'mhinz/vim-startify'
 
   call vundle#end()
   filetype plugin indent on
@@ -173,35 +172,6 @@
 " }
 
 
-" -- Startify {
-" ===========
-
-    function! s:filter_header(lines) abort
-    let longest_line   = max(map(copy(a:lines), 'len(v:val)'))
-    let centered_lines = map(copy(a:lines),
-        \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
-    return centered_lines
-    endfunction
-    let g:startify_custom_header = s:filter_header([
-    \  "         ________ ++     ________",
-    \  "        /VVVVVVVV\++++  /VVVVVVVV\\",
-    \  "        \\VVVVVVVV/++++++\\VVVVVVVV/",
-    \  "         |VVVVVV|++++++++/VVVVV/'",
-    \  "         |VVVVVV|++++++/VVVVV/'",
-    \  "        +|VVVVVV|++++/VVVVV/'+",
-    \  "      +++|VVVVVV|++/VVVVV/'+++++",
-    \  "    +++++|VVVVVV|/VVVVV/'+++++++++",
-    \  "      +++|VVVVVVVVVVV/'+++++++++",
-    \  "        +|VVVVVVVVV/'+++++++++",
-    \  "         |VVVVVVV/'+++++++++",
-    \  "         |VVVVV/'+++++++++",
-    \  "         |VVV/'+++++++++",
-    \  "         'V/'   ++++++",
-    \  "                  ++"])
-
-" }
-
-
 " -- Lightline {
 " ============
 
@@ -218,17 +188,5 @@
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<tab>"
   let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" }
-
-
-" -- Emmet {
-" ========
-
-  let g:user_emmet_settings = {
-  \  'html' : {
-  \    'quote_char': "'"
-  \  }
-  \}
 
 " }
