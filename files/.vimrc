@@ -106,11 +106,8 @@
   set nobackup
   set nowb
 
-  " Use unsaved buffers without
+  " Hide unsaved buffers
   set hidden
-
-  " Auto-reload file if modified
-  set autoread
 
   " Show cursor line
   set cursorline
