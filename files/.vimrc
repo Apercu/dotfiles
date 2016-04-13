@@ -34,8 +34,6 @@
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'Raimondi/delimitMate'
   Plugin 'pangloss/vim-javascript'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'mtscout6/vim-cjsx'
   Plugin 'SirVer/ultisnips'
   Plugin '42Zavattas/vim-snippets'
   Plugin 'airblade/vim-gitgutter'
