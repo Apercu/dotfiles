@@ -145,7 +145,7 @@
   set wildignore=*.o,*.obj,*~
   set wildignore+=*sass-cache*
   set wildignore+=*DS_Store*
-  set wildignore+=*node_modules*
+  set wildignore+=*node_modules*,*release*
   set wildignore+=*dist*
   set wildmenu
 
