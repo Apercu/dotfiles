@@ -39,6 +39,7 @@
   Plugin 'airblade/vim-gitgutter'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'easymotion/vim-easymotion'
+  Plugin 'mxw/vim-jsx'
 
   call vundle#end()
   filetype plugin indent on
@@ -189,5 +190,13 @@
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<tab>"
   let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" }
+
+
+" -- Vim JSX {
+" ==========
+
+  let g:jsx_ext_required = 0
 
 " }
