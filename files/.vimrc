@@ -145,7 +145,13 @@
   set wildignore=*.o,*.obj,*~
   set wildignore+=*sass-cache*
   set wildignore+=*DS_Store*
-  set wildignore+=*node_modules*,*release*
+  set wildignore+=*node_modules*
+  set wildignore+=*ios/*
+  set wildignore+=*android/*
+  set wildignore+=*bower_components*
+  set wildignore+=*plugins*
+  set wildignore+=*platforms*
+  set wildignore+=*release*
   set wildignore+=*dist*
   set wildmenu
 
