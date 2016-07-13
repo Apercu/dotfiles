@@ -25,23 +25,20 @@
   set nocompatible
   filetype off
 
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#begin()
+  call plug#begin('~/.vim/plugged')
 
-  Plugin 'gmarik/Vundle.vim'
+  Plug 'itchyny/lightline.vim'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'Raimondi/delimitMate'
+  Plug 'pangloss/vim-javascript'
+  Plug 'SirVer/ultisnips'
+  Plug '42Zavattas/vim-snippets', { 'branch': 'develop' }
+  Plug 'airblade/vim-gitgutter'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'mxw/vim-jsx'
 
-  Plugin 'itchyny/lightline.vim'
-  Plugin 'altercation/vim-colors-solarized'
-  Plugin 'Raimondi/delimitMate'
-  Plugin 'pangloss/vim-javascript'
-  Plugin 'SirVer/ultisnips'
-  Plugin '42Zavattas/vim-snippets'
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'easymotion/vim-easymotion'
-  Plugin 'mxw/vim-jsx'
-
-  call vundle#end()
+  call plug#end()
   filetype plugin indent on
 
 " }
