@@ -16,6 +16,9 @@
   vnoremap // y/<C-R>"<CR>"
   let mapleader=","
 
+  " smart paste
+  nnoremap p p=`]`
+
 " }
 
 
