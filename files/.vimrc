@@ -150,7 +150,7 @@
   set wildignore+=*plugins*
   set wildignore+=*platforms*
   set wildignore+=*release*
-  set wildignore+=*dist*
+  set wildignore+=*dist*,*dist-server*
   set wildmenu
 
 " }
