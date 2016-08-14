@@ -17,7 +17,8 @@
   let mapleader=","
 
   " smart paste
-  nnoremap p p=`]`
+  nnoremap p p=`]
+  nnoremap <S-p> <S-p>=`]
 
 " }
 
