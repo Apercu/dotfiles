@@ -93,7 +93,7 @@
   " Number of lines to keep above & below cursor when scrolling
   set sidescrolloff=15
   set sidescroll=1
-  set scrolloff=8
+  " set scrolloff=8
 
   " Auto reload files when changed
   set autoread
@@ -179,7 +179,7 @@
 " ============
 
   let g:lightline = {
-  \   'colorscheme': 'solarized_dark',
+  \   'colorscheme': 'solarized',
   \   'active': {
   \     'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ],
   \     'right': [ [ 'lineinfo' ] ]
