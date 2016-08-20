@@ -31,10 +31,10 @@
 
   URxvt.allow_bold:           true
 
-  URxvt.font:                 xft:Tamsyn:size=13
-  URxvt*boldFont:             xft:Tamsyn:bold:size=13
-  URxvt*italicFont:           xft:Tamsyn:size=13
-  URxvt*boldItalicFont:       xft:Tamsyn:bold:size=13
+  URxvt.font:                 xft:Tamsyn:size=18
+  URxvt*boldFont:             xft:Tamsyn:bold:size=18
+  URxvt*italicFont:           xft:Tamsyn:size=18
+  URxvt*boldItalicFont:       xft:Tamsyn:bold:size=18
 
 ! }
 

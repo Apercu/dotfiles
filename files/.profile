@@ -56,6 +56,14 @@
     # Purge memory
     alias purge='sync; echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
+    say () {
+       espeak -a 200 $1 2>/dev/null
+    }
+
+    download () {
+      transmission-remote-cli -c $ZAVATTA $1 >/dev/null 2>/dev/null && echo 'Downloading!' || echo 'Fail.'
+    }
+
   fi
 
   # Other
