@@ -172,6 +172,9 @@
   autocmd BufWinLeave * call clearmatches()
   autocmd VimResized * :wincmd =
 
+  " disable xml different color for closing tag
+  highlight link xmlEndTag xmlTag
+
 " }
 
 
@@ -179,7 +182,7 @@
 " ============
 
   let g:lightline = {
-  \   'colorscheme': 'solarized',
+  \   'colorscheme': 'jellybeans',
   \   'active': {
   \     'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ],
   \     'right': [ [ 'lineinfo' ] ]
