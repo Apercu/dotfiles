@@ -32,7 +32,7 @@
   call plug#begin('~/.vim/plugged')
 
   Plug 'itchyny/lightline.vim'
-  Plug 'altercation/vim-colors-solarized'
+  Plug 'chriskempson/base16-vim'
   Plug 'Raimondi/delimitMate'
   Plug 'pangloss/vim-javascript'
   Plug 'SirVer/ultisnips'
@@ -64,7 +64,7 @@
   syntax on
 
   " The chosen one
-  colorscheme solarized
+  colorscheme base16-ocean
   set background=dark
 
   " Encoding, etc.
