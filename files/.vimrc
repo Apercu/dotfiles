@@ -102,7 +102,7 @@
   set autoread
 
   " Show the 80 chars column
-  set colorcolumn=80
+  " set colorcolumn=80
 
   " Don't create useless files
   set noswapfile
@@ -113,7 +113,7 @@
   set hidden
 
   " Show cursor line
-  set cursorline
+  " set cursorline
 
   " Move on search
   set incsearch
