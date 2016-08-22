@@ -20,8 +20,8 @@
   vnoremap // y/<C-R>"<CR>"
 
   " smart paste
-  nnoremap p p=`]
-  nnoremap <S-p> <S-p>=`]
+  nnoremap m p=`]
+  nnoremap <S-m> <S-p>=`]
 
 " }
 
