@@ -8,13 +8,16 @@
 " -- Mapping {
 " ==========
 
+  let mapleader=","
+
   nnoremap <Space> <NOP>
   nmap <silent> <Space>h :wincmd h<CR>
   nmap <silent> <Space>t :wincmd j<CR>
   nmap <silent> <Space>n :wincmd k<CR>
   nmap <silent> <Space>s :wincmd l<CR>
+
+  " search for visually selected text by pressing //
   vnoremap // y/<C-R>"<CR>"
-  let mapleader=","
 
   " smart paste
   nnoremap p p=`]
