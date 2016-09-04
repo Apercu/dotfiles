@@ -29,6 +29,8 @@
   alias prof='vim ~/.profile'
   alias sprof='source ~/.profile'
 
+  alias vim=nvim
+
   # `ls` thoughts
   alias lt='ls -lt'
 
