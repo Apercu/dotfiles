@@ -46,6 +46,11 @@
   alias scaffold='git config --local user.name TheScaffolder && git config --local user.email spam@forpurpose.io && git commit --amend --author "TheScaffolder <spam@forpurpose.io>" && git config --local --unset user.email && git config --local --unset user.name'
   alias unscaffold='git config --local user.name meriadec && git config --local user.email meriadec.pillet@gmail.com && git commit --amend --author "meriadec <meriadec.pillet@gmail.com>" && git config --local --unset user.email && git config --local --unset user.name'
 
+  # Random
+  pastebin () {
+    curl --data "api_dev_key=$PASTEBIN_API_KEY&api_option=paste&api_paste_code=$1" http://pastebin.com/api/api_post.php && echo ''
+  }
+
   # Linux specifics
   if [[ `uname` == 'Linux' ]]; then
 
