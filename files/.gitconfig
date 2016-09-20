@@ -13,6 +13,6 @@
 [push]
 	default = simple
 [core]
-	editor = vim
+	editor = nvim
 	pager = less -S
 	excludesfile = ~/.gitignore_global
