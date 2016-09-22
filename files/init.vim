@@ -10,18 +10,28 @@
 
   let mapleader=","
 
+  " dvorak window focus move
   nnoremap <Space> <NOP>
   nmap <silent> <Space>h :wincmd h<CR>
   nmap <silent> <Space>t :wincmd j<CR>
   nmap <silent> <Space>n :wincmd k<CR>
   nmap <silent> <Space>s :wincmd l<CR>
 
-  " search for visually selected text by pressing //
-  vnoremap // y/<C-R>"<CR>"
-
-  " smart paste
+  " auto indent paste
   nnoremap t p=`]
   nnoremap <S-t> <S-p>=`]
+
+  if has("unix")
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin\n"
+      nnoremap þ :m .+1<CR>==
+      nnoremap ñ :m .-2<CR>==
+      inoremap þ <Esc>:m .+1<CR>==gi
+      inoremap ñ <Esc>:m .-2<CR>==gi
+      vnoremap þ :m '>+1<CR>gv=gv
+      vnoremap ñ :m '<-2<CR>gv=gv
+    endif
+  endif
 
 " }
 
@@ -103,7 +113,7 @@
   set autoread
 
   " Show the 80 chars column
-  " set colorcolumn=80
+  set colorcolumn=80
 
   " Don't create useless files
   set noswapfile
@@ -114,7 +124,7 @@
   set hidden
 
   " Show cursor line
-  " set cursorline
+  set cursorline
 
   " Move on search
   set incsearch
