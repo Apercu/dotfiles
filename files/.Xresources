@@ -60,7 +60,7 @@
 ! -- Cursor {
 ! =========
 
-  URxvt.cursorBlink:          true
+  URxvt.cursorBlink:          false
   URxvt.cursorColor:          #657b83
   URxvt.cursorUnderline:      false
 
