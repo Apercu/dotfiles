@@ -44,7 +44,7 @@
 
   export PATH=$HOME/.brew/bin
   export PATH=$PATH:$HOME/.node/bin
-  export PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
+  export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
   export PATH=$PATH:/usr/local/bin
   export PATH=$PATH:/usr/local/sbin
   export PATH=$PATH:/bin
