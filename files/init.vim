@@ -45,7 +45,7 @@
 
   Plug 'itchyny/lightline.vim'
   Plug 'chriskempson/base16-vim'
-  Plug 'Raimondi/delimitMate'
+  Plug 'jiangmiao/auto-pairs'
   Plug 'pangloss/vim-javascript'
   Plug 'SirVer/ultisnips'
   Plug '42Zavattas/vim-snippets', { 'branch': 'develop' }
