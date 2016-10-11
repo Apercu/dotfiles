@@ -40,7 +40,6 @@
   Plug 'pangloss/vim-javascript'
   Plug 'SirVer/ultisnips'
   Plug '42Zavattas/vim-snippets', { 'branch': 'develop' }
-  Plug 'airblade/vim-gitgutter'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'mxw/vim-jsx'
