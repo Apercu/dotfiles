@@ -21,6 +21,9 @@
   nnoremap t p=`]
   nnoremap <S-t> <S-p>=`]
 
+  " select pasted text
+  nnoremap gp `[v`]
+
   if has("unix")
     let s:uname = system("uname -s")
     if s:uname == "Darwin\n"
