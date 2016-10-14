@@ -10,6 +10,9 @@
 
   let mapleader=","
 
+  " easymotion trigger with only 1 leader
+  map <Leader> <Plug>(easymotion-prefix)
+
   " dvorak window focus move
   nnoremap <Space> <NOP>
   nmap <silent> <Space>h :wincmd h<CR>
@@ -48,13 +51,14 @@
 
   Plug 'itchyny/lightline.vim'
   Plug 'chriskempson/base16-vim'
-  Plug 'jiangmiao/auto-pairs'
   Plug 'pangloss/vim-javascript'
+  Plug 'Raimondi/delimitMate'
   Plug 'SirVer/ultisnips'
   Plug '42Zavattas/vim-snippets', { 'branch': 'develop' }
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'mxw/vim-jsx'
+  Plug 'scrooloose/nerdcommenter'
   Plug 'neomake/neomake'
 
   call plug#end()
@@ -234,5 +238,12 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 " ==========
 
   let g:jsx_ext_required = 0
+
+" }
+
+" -- NerdCommenter {
+" ================
+
+  let g:NERDSpaceDelims = 1
 
 " }
