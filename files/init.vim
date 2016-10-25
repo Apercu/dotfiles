@@ -245,5 +245,7 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 " ================
 
   let g:NERDSpaceDelims = 1
+  let g:NERDTrimTrailingWhitespace = 1
+  let g:NERDDefaultAlign = 'left'
 
 " }
