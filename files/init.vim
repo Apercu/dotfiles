@@ -56,6 +56,7 @@
   Plug 'SirVer/ultisnips'
   Plug '42Zavattas/vim-snippets', { 'branch': 'develop' }
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'airblade/vim-gitgutter'
   Plug 'easymotion/vim-easymotion'
   Plug 'mxw/vim-jsx'
   Plug 'scrooloose/nerdcommenter'
